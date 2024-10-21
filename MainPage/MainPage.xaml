@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MainPage.MainPage"
+             BackgroundColor="DeepSkyBlue">
+
+    <ScrollView>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="10">
+
+            <!-- Sekcja z avatarem i panelem użytkownika -->
+            <Grid ColumnDefinitions="1*, 2*" Padding="0, 0, 0, 30">
+                <!-- Panel avatara -->
+                <Frame BackgroundColor="Yellow" BorderColor="Black" HeightRequest="100" WidthRequest="150" CornerRadius="10">
+                    <Label Text="Avatar"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+                </Frame>
+
+                <!-- Panel użytkownika -->
+                <Frame BackgroundColor="White" BorderColor="Black" HeightRequest="100" WidthRequest="150" Grid.Column="1" CornerRadius="10">
+                    <Label Text="Panel użytkownika"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+                </Frame>
+            </Grid>
+            <Grid>
+                <!-- Obrazek tła stylu Minecraft -->
+            <Image Source="dirt.png"
+               Aspect="AspectFill"
+               
+               HorizontalOptions="Fill"
+               VerticalOptions="Fill" />
+
+            <!-- Przycisk START -->
+            <Button Text="START"
+                BackgroundColor="#B77E2E"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="Large"
+                HeightRequest="50"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" 
+                />
+                </Grid>
+        </StackLayout>
+
+
+</ScrollView>
+</ContentPage>
+
